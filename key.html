@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>learning jquery</title>
+    <style>
+        body{
+            font-style: oblique;
+        }
+        #box{
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid #0000;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>IPCS Global</h2>
+    <DIV id="box" class="test">
+    <h2>
+        test box
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum rem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum remLorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum remLorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum remLorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum remLorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum remLorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius similique, aliquam, 
+        at sunt rerum in quibusdam dolor ex dignissimos, pariatur soluta facere corporis enim asperiores? 
+        Sapiente beatae rerum rem</p>
+    </DIV>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#box").click(function(){
+            $("#box").css("background-color","green");
+           // var a=$("#box").html();
+            //alert(a)
+        });
+        $("#box").dblclick(function(){
+            $("#box").css("background-color","orange");
+        });
+        $("#box").contextmenu(function(){
+            $("#box").css("background-color","yellow"); //right click
+        });
+        $("#box").mouseenter(function(){
+            $("#box").css("background-color","blue");
+        });
+        $("#box").mouseleave(function(){
+            $("#box").css("background-color","purple");
+        });
+        
+    })
+</script>
+</html>

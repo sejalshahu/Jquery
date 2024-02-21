@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>function</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p>IPCS Global</p>
+        <p>sejal</p>
+        <p>kajal</p>
+        <p class="class1">Welcome</p>
+        <p id="main">harshada</p>
+    </body>
+    <script>
+        $(document).ready(function(){
+           // $("p").click();
+           $("p").click(function(){
+            alert("you clicked");
+           // $(".class1").hide();
+           // $("#main").hide();
+                $("p.main").click();
+            })
+        })
+    </script>
+</html>
